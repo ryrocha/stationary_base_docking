@@ -1,0 +1,6 @@
+#!/usr/bin/env python2
+
+import stationary_base_docking.test
+
+if __name__ == '__main__':
+	stationary_base_docking.test.main()

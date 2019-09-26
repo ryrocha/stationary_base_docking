@@ -1,0 +1,24 @@
+<package>
+	<name>stationary_base_docking</name>
+	<version>2.1.1</version>
+	<description>Package to test offboard ontrol and vision tracking capabilities</description>
+
+	<maintainer email="rarocha@ucdavis.edu">Ryan Rocha</maintainer>
+
+	<license>TODO</license>e
+
+	<buildtool_depend>catkin</buildtool_depend>
+
+	<build_depend>mavros_msgs</build_depend>
+	<build_depend>geometry_msgs</build_depend>
+	<build_depend>roscpp</build_depend>
+	<build_depend>rospy</build_depend>
+	<build_depend>sensor_msgs</build_depend>
+
+	<run_depend>mavros_msgs</run_depend>
+	<run_depend>geometry_msgs</run_depend>
+	<run_depend>roscpp</run_depend>
+	<run_depend>rospy</run_depend>
+	<run_depend>sensor_msgs</run_depend>
+
+</package>
