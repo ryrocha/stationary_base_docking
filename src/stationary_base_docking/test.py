@@ -36,17 +36,17 @@ class stationary_docking(Common):
 		# delay switch to offboard mode to ensure sufficient initial setpoint stream
 		Timer(5.0, self.set_offboard).start()
 
-		# # begin filtering vision data
-		# self.detect_led_thread.start()
-		# self.filter_thread.start()
-		# self.collect_thread.start()
+		# begin filtering vision data
+		self.detect_led_thread.start()
+		self.filter_thread.start()
+		self.collect_thread.start()
 
 		# # begin vision feedback
 		# self.vision_thread.start()
 
-		# # start velocity controlled docking
-		# self.vel_dock_thread.start()
-		# self.vel_pub_thread.start()
+		# start velocity controlled docking
+		self.vel_dock_thread.start()
+		self.vel_pub_thread.start()
 		
 
 def main():

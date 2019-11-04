@@ -10,9 +10,9 @@ class img_capture(object):
 		# capture video
 		self.vid = cv2.VideoCapture(1)
 		self.vid.set(cv2.CAP_PROP_AUTO_EXPOSURE, 0.25)
-		self.vid.set(cv2.CAP_PROP_EXPOSURE, 0.0005)
-		self.vid.set(cv2.CAP_PROP_CONTRAST, 0.0005)
-		self.vid.set(cv2.CAP_PROP_SATURATION, 0.5)
+		self.vid.set(cv2.CAP_PROP_EXPOSURE, 0.001)
+		self.vid.set(cv2.CAP_PROP_CONTRAST, 0.01)
+		self.vid.set(cv2.CAP_PROP_SATURATION, 0.7)
 		fourcc = cv2.VideoWriter_fourcc(*'MJPG')
 		self.vid.set(cv2.CAP_PROP_FOURCC, fourcc)
 		self.vid.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
